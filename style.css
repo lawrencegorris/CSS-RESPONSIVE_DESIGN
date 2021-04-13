@@ -6,7 +6,6 @@
   body {
     background-color: red;
   }
-}
   
 @media (min-width: 300px) and (max-width: 768px) {
     body {
