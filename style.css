@@ -6,15 +6,36 @@
   body {
     background-color: red;
   }
-  
+
+  #medium, #large {
+    display: none;
+  }
+
 @media (min-width: 300px) and (max-width: 768px) {
     body {
       background-color: green;
     }
+
+    #medium {
+      display: block;
+    }
+
+    #small, #large {
+      display: none;
+    }
+
   }
 
   @media (min-width: 768px) {
       body {
           background-color: blue;
+      }
+
+      #large {
+        display: block;
+      }
+
+      #medium, #small {
+        display: none;
       }
   } 
