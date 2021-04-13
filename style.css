@@ -1,10 +1,25 @@
+/*   SETUP   */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
   body {
-    background-color: red;
+    background-color: #730102;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+
+/*   DIV STYLING   */
+
+  div {
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
   }
 
   h1 {
@@ -13,48 +28,62 @@
 
   p {
     font-size: 16px;
+    border-collapse: collapse;
   }
 
-  div {
-    my: 15px;
-    padding: 25px;
-    border: 1px solid black;
+
+
+/*   COLORS   */
+
+  #small {
+    background-color: #730102;
   }
+
+  #medium {
+    background-color: #B62F22;
+  }
+
+  #large {
+    background-color: #E8432A;
+  }
+
+/*   MEDIUM SCREEN   */
 
 @media (min-width: 300px) and (max-width: 768px) {
     body {
-      background-color: green;
-    }
-
-    #medium {
-      display: block;
-    }
-
-    #small, #large {
-      display: none;
+      background-color: #555C2F;
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 30px;
     }
 
     p {
       font-size: 20px;
     }
 
+    #small {
+      width: 66.66%;
+      background-color: #778041;
+    }
+
+    #medium {
+      width: 33.33%;
+      background-color: #B2BF62;
+    }
+
+    #large {
+      background-color: #D5E675;
+    }
+
   }
+
+/*   LARGE SCREEN   */
 
   @media (min-width: 768px) {
       body {
-          background-color: blue;
-      }
-
-      #large {
-        display: block;
-      }
-
-      #medium, #small {
-        display: none;
+          background-color: #164451;
+          flex-wrap: nowrap;
       }
 
       h1 {
@@ -63,5 +92,17 @@
 
       p {
         font-size: 25px;
+      }
+
+      #small {
+        background-color: #EFC169;
+      }
+
+      #medium {
+        background-color: #F2784B;
+      }
+
+      #large {
+        background-color: #D94141;
       }
   } 
